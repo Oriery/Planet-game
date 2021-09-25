@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{EE24A85E-43C8-CAC6-6AC1-5DBC54BAD323}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Planet_Strat",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
