@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Pawn_Main.h"
+#include "PawnWithPlanetHorizon.h"
 
 // Sets default values
-APawn_Main::APawn_Main()
+APawnWithPlanetHorizon::APawnWithPlanetHorizon()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -27,87 +27,88 @@ APawn_Main::APawn_Main()
 	VisibleMeshBody->SetEnableGravity(false);
 	VisibleMeshHead->SetSimulatePhysics(true);
 	VisibleMeshHead->SetEnableGravity(false);
-	VisibleMeshBody->SetLinearDamping(1);
-	VisibleMeshBody->SetAngularDamping(1);
+	VisibleMeshBody->SetLinearDamping(0);
+	VisibleMeshBody->SetAngularDamping(5);
 
 	VisibleMeshHead->SetIsReplicated(true);
 
 	NetUpdateFrequency = 40;
 	MinNetUpdateFrequency = 2;
 
+	//VisibleMeshBody->SetPhysicsLinearVelocity(100 * GetActorRightVector(), true);
 }
 
 // Called when the game starts or when spawned
-void APawn_Main::BeginPlay()
+void APawnWithPlanetHorizon::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void APawn_Main::Tick(float DeltaTime)
+void APawnWithPlanetHorizon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
 // Called to bind functionality to input
-void APawn_Main::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void APawnWithPlanetHorizon::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	//InputComponent->BindAction("Grow", IE_Pressed, this, &AMyPawn::StartGrowing);
 	//InputComponent->BindAction("Grow", IE_Released, this, &AMyPawn::StopGrowing);
 
-	InputComponent->BindAxis("MoveForward", this, &APawn_Main::MoveForwardAxis);
-	InputComponent->BindAxis("MoveRight", this, &APawn_Main::MoveRightAxis);
-	InputComponent->BindAxis("RotateX", this, &APawn_Main::RotateXAxis);
-	InputComponent->BindAxis("RotateY", this, &APawn_Main::RotateYAxis);
+	InputComponent->BindAxis("MoveForward", this, &APawnWithPlanetHorizon::MoveForwardAxis);
+	InputComponent->BindAxis("MoveRight", this, &APawnWithPlanetHorizon::MoveRightAxis);
+	InputComponent->BindAxis("RotateX", this, &APawnWithPlanetHorizon::RotateXAxis);
+	InputComponent->BindAxis("RotateY", this, &APawnWithPlanetHorizon::RotateYAxis);
 }
 
 
 
-void APawn_Main::MoveRightAxis(float AxisValue)
+void APawnWithPlanetHorizon::MoveRightAxis(float AxisValue)
 {
 	ServerRPC_MoveRightAxis(AxisValue);
 	//VisibleMeshBody->SetPhysicsLinearVelocity(AxisValue * GetActorRightVector(), true);
 }
 
-void APawn_Main::MoveForwardAxis(float AxisValue)
+void APawnWithPlanetHorizon::MoveForwardAxis(float AxisValue)
 {
 	ServerRPC_MoveForwardAxis(AxisValue);
 	//VisibleMeshBody->SetPhysicsLinearVelocity(GetActorForwardVector() * AxisValue, true);
 }
 
-void APawn_Main::RotateXAxis(float AxisValue)
+void APawnWithPlanetHorizon::RotateXAxis(float AxisValue)
 {
 	ServerRPC_RotateXAxis(AxisValue);
 	//AddActorLocalRotation(FRotator(0, AxisValue, 0));
 }
 
-void APawn_Main::RotateYAxis(float AxisValue)
+void APawnWithPlanetHorizon::RotateYAxis(float AxisValue)
 {
 	ServerRPC_RotateYAxis(AxisValue);
 	//VisibleMeshHead->AddLocalRotation(FRotator(AxisValue, 0, 0));
 }
 
 
-void APawn_Main::ServerRPC_MoveRightAxis_Implementation(float AxisValue)
+void APawnWithPlanetHorizon::ServerRPC_MoveRightAxis_Implementation(float AxisValue)
 {
 	VisibleMeshBody->SetPhysicsLinearVelocity(AxisValue * GetActorRightVector(), true);
 }
 
-void APawn_Main::ServerRPC_MoveForwardAxis_Implementation(float AxisValue)
+void APawnWithPlanetHorizon::ServerRPC_MoveForwardAxis_Implementation(float AxisValue)
 {
 	VisibleMeshBody->SetPhysicsLinearVelocity(GetActorForwardVector() * AxisValue, true);
 }
 
-void APawn_Main::ServerRPC_RotateXAxis_Implementation(float AxisValue)
+void APawnWithPlanetHorizon::ServerRPC_RotateXAxis_Implementation(float AxisValue)
 {
 	AddActorLocalRotation(FRotator(0, AxisValue, 0));
 }
 
-void APawn_Main::ServerRPC_RotateYAxis_Implementation(float AxisValue)
+void APawnWithPlanetHorizon::ServerRPC_RotateYAxis_Implementation(float AxisValue)
 {
 	VisibleMeshHead->AddLocalRotation(FRotator(AxisValue, 0, 0));
 }

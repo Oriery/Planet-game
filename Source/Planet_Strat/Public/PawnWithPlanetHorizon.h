@@ -5,17 +5,16 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Camera/CameraComponent.h"
-#include "Pawn_Main.generated.h"
-
+#include "PawnWithPlanetHorizon.generated.h"
 
 UCLASS()
-class PLANET_STRAT_API APawn_Main : public APawn
+class PLANET_STRAT_API APawnWithPlanetHorizon : public APawn
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this pawn's properties
-	APawn_Main();
+	APawnWithPlanetHorizon();
 
 protected:
 	// Called when the game starts or when spawned
@@ -46,12 +45,12 @@ public:
 	void RotateYAxis(float AxisValue);
 
 	UFUNCTION(Server, Unreliable)
-	void ServerRPC_MoveRightAxis(float AxisValue);
+		void ServerRPC_MoveRightAxis(float AxisValue);
 	UFUNCTION(Server, Unreliable)
-	void ServerRPC_MoveForwardAxis(float AxisValue);
+		void ServerRPC_MoveForwardAxis(float AxisValue);
 	UFUNCTION(Server, Unreliable)
-	void ServerRPC_RotateXAxis(float AxisValue);
+		void ServerRPC_RotateXAxis(float AxisValue);
 	UFUNCTION(Server, Unreliable)
-	void ServerRPC_RotateYAxis(float AxisValue);
-
+		void ServerRPC_RotateYAxis(float AxisValue);
+	
 };
