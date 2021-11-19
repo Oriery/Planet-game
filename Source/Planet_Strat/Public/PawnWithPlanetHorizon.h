@@ -52,5 +52,13 @@ public:
 		void ServerRPC_RotateXAxis(float AxisValue);
 	UFUNCTION(Server, Unreliable)
 		void ServerRPC_RotateYAxis(float AxisValue);
-	
+
+	UPROPERTY()
+		FVector LocationOfCenterOfGravity;
+
+	UPROPERTY()
+		int RadiusOfPlanet;
+
+	UPROPERTY()
+		int maxSpeedOfPawn;
 };

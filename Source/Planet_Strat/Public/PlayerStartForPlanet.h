@@ -25,11 +25,4 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	bool isFree;
-
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* RootScene;
-
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* SpawnPoint;
-
 };

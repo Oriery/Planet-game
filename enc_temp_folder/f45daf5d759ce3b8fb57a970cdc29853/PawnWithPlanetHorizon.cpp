@@ -55,15 +55,17 @@ void APawnWithPlanetHorizon::Tick(float DeltaTime)
 
 	if (HasAuthority())
 	{
-		FVector posToPlanet = GetActorLocation() - LocationOfCenterOfGravity;
-		posToPlanet.Normalize();
-		FRotator rot = UKismetMathLibrary::MakeRotFromZX(posToPlanet, GetActorForwardVector());
+		FVector pos = GetActorLocation() - LocationOfCenterOfGravity;
+		pos.Normalize();
+		FRotator rot = UKismetMathLibrary::MakeRotFromZX(pos, GetActorForwardVector());
 		SetActorRotation(rot);
-		SetActorLocation((posToPlanet * RadiusOfPlanet) + LocationOfCenterOfGravity);
+		SetActorLocation((pos * RadiusOfPlanet) + LocationOfCenterOfGravity);
 
 		VisibleMeshBody->SetPhysicsAngularVelocity(FVector(0., 0., 0.));
 
-		VisibleMeshBody->SetPhysicsLinearVelocity(FVector::VectorPlaneProject(VisibleMeshBody->GetPhysicsLinearVelocity(), posToPlanet).GetClampedToMaxSize(maxSpeedOfPawn));
+		FVector vel = FVector::VectorPlaneProject(VisibleMeshBody->GetPhysicsLinearVelocity(), pos).GetClampedToMaxSize(maxSpeedOfPawn);
+
+		VisibleMeshBody->SetPhysicsLinearVelocity(vel);
 	}
 }
 
@@ -91,6 +93,10 @@ void APawnWithPlanetHorizon::MoveRightAxis(float AxisValue)
 
 void APawnWithPlanetHorizon::MoveForwardAxis(float AxisValue)
 {
+	if (AxisValue == 0)
+	{
+		print("fb is 0");
+	}
 	ServerRPC_MoveForwardAxis(AxisValue);
 	//VisibleMeshBody->SetPhysicsLinearVelocity(GetActorForwardVector() * AxisValue, true);
 }
@@ -110,40 +116,12 @@ void APawnWithPlanetHorizon::RotateYAxis(float AxisValue)
 
 void APawnWithPlanetHorizon::ServerRPC_MoveRightAxis_Implementation(float AxisValue)
 {
-	if (AxisValue)
-	{
-		FVector	spdToAddTemp = GetActorRightVector() * AxisValue;
-		float coof = 1;
-		if (FVector::DotProduct(VisibleMeshBody->GetPhysicsLinearVelocity(), spdToAddTemp) < -3)
-		{
-			coof = 3;
-		}
-		VisibleMeshBody->SetPhysicsLinearVelocity(spdToAddTemp * 3 * coof, true);
-	}
-	else
-	{
-		FVector rightSpd = VisibleMeshBody->GetPhysicsLinearVelocity().ProjectOnToNormal(GetActorRightVector());
-		VisibleMeshBody->SetPhysicsLinearVelocity(-rightSpd.GetClampedToMaxSize(2), true);
-	}
+	VisibleMeshBody->SetPhysicsLinearVelocity(GetActorRightVector() * AxisValue, true);
 }
 
 void APawnWithPlanetHorizon::ServerRPC_MoveForwardAxis_Implementation(float AxisValue)
 {
-	if (AxisValue)
-	{
-		FVector	spdToAddTemp = GetActorForwardVector() * AxisValue;
-		float coof = 1;
-		if (FVector::DotProduct(VisibleMeshBody->GetPhysicsLinearVelocity(), spdToAddTemp) < -3)
-		{
-			coof = 3;
-		}
-		VisibleMeshBody->SetPhysicsLinearVelocity(spdToAddTemp * 3 * coof, true);
-	}
-	else
-	{
-		FVector fwdSpd = VisibleMeshBody->GetPhysicsLinearVelocity().ProjectOnToNormal(GetActorForwardVector());
-		VisibleMeshBody->SetPhysicsLinearVelocity(- fwdSpd.GetClampedToMaxSize(2), true);
-	}
+	VisibleMeshBody->SetPhysicsLinearVelocity(GetActorForwardVector() * AxisValue, true);
 }
 
 void APawnWithPlanetHorizon::ServerRPC_RotateXAxis_Implementation(float AxisValue)

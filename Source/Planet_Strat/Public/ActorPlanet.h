@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Cube_Cpp.generated.h"
+#include "ActorPlanet.generated.h"
 
 UCLASS()
-class PLANET_STRAT_API ACube_Cpp : public AActor
+class PLANET_STRAT_API AActorPlanet : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ACube_Cpp();
+	AActorPlanet();
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,5 +25,4 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* VisibleMesh;
-
 };

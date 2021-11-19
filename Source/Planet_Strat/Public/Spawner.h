@@ -4,16 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "ActorWithPlanetGravity.generated.h"
+#include "MainActionInterface.h"
+#include "Spawner.generated.h"
 
 UCLASS()
-class PLANET_STRAT_API AActorWithPlanetGravity : public AActor
+class PLANET_STRAT_API ASpawner : public AActor, public IMainActionInterface
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AActorWithPlanetGravity();
+	ASpawner();
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,12 +24,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* VisibleMesh;
+	virtual void mainAction() override;
 
 	UPROPERTY(EditAnywhere)
-	AActor* ActorOfCenterOfGravity;
-
-	UPROPERTY()
-	FVector LocationOfCenterOfGravity;
+	TSubclassOf<AActor> WhatToSpawn;
 };

@@ -10,15 +10,6 @@ APlayerStartForPlanet::APlayerStartForPlanet()
 	PrimaryActorTick.bCanEverTick = false;
 	
 	isFree = true;
-
-	RootScene = CreateDefaultSubobject<USceneComponent>(TEXT("RootScene"));
-	RootScene->SetupAttachment(RootComponent);
-
-	SpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("SpawnPoint"));
-	SpawnPoint->SetupAttachment(RootScene);
-
-	SpawnPoint->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
-
 }
 
 // Called when the game starts or when spawned
