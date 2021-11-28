@@ -13,5 +13,6 @@ UCLASS()
 class PLANET_STRAT_API AMyGameSession : public AGameSession
 {
 	GENERATED_BODY()
-	
+
+		virtual void RegisterServer() override;
 };

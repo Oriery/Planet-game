@@ -10,7 +10,11 @@ AActorPlanet::AActorPlanet()
 	PrimaryActorTick.bCanEverTick = true;
 
 	VisibleMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	RootComponent = VisibleMesh;
+	//RootComponent = VisibleMesh;
+
+	VisibleMesh->SetCollisionProfileName("Custom...");
+	VisibleMesh->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic); // не работает (ставлю в Blueprint)
+	VisibleMesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore); // не работает (ставлю в Blueprint)
 
 }
 

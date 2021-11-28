@@ -16,6 +16,8 @@ public:
 	// Sets default values for this pawn's properties
 	APawnWithPlanetHorizon();
 
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -26,6 +28,9 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UPROPERTY(VisibleAnywhere)
+		UStaticMeshComponent* MeshMass;
 
 	UPROPERTY(VisibleAnywhere)
 		UStaticMeshComponent* VisibleMeshBody;
@@ -39,6 +44,9 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		float MaxSpeed;
 
+	UPROPERTY(Replicated)
+		FRotator WantedByServerRotOfCharacter;
+
 	void MoveRightAxis(float AxisValue);
 	void MoveForwardAxis(float AxisValue);
 	void RotateXAxis(float AxisValue);
@@ -49,9 +57,9 @@ public:
 	UFUNCTION(Server, Unreliable)
 		void ServerRPC_MoveForwardAxis(float AxisValue);
 	UFUNCTION(Server, Unreliable)
-		void ServerRPC_RotateXAxis(float AxisValue);
+		void ServerRPC_RotateXAxis(float WantedAngleCameraX);
 	UFUNCTION(Server, Unreliable)
-		void ServerRPC_RotateYAxis(float AxisValue);
+		void ServerRPC_RotateYAxis(float WantedAngleCameraY);
 
 	UPROPERTY()
 		FVector LocationOfCenterOfGravity;
@@ -61,4 +69,5 @@ public:
 
 	UPROPERTY()
 		int maxSpeedOfPawn;
+
 };
