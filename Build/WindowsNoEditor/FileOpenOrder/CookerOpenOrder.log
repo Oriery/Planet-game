@@ -122,14 +122,14 @@
 "../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.ubulk" 121
 "../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 122
 "../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uexp" 123
-"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 124
-"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uexp" 125
-"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 126
-"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uexp" 127
-"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 128
-"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uexp" 129
-"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 130
-"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uexp" 131
+"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 124
+"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uexp" 125
+"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 126
+"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uexp" 127
+"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 128
+"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uexp" 129
+"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 130
+"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uexp" 131
 "../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 132
 "../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uexp" 133
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 134
@@ -185,10 +185,10 @@
 "../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uexp" 184
 "../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uasset" 185
 "../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uexp" 186
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 187
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uexp" 188
-"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 189
-"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uexp" 190
+"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 187
+"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uexp" 188
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 189
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uexp" 190
 "../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset" 191
 "../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uexp" 192
 "../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 193
@@ -348,23 +348,23 @@
 "../../../Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uexp" 347
 "../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 348
 "../../../Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uexp" 349
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 350
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 351
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 352
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 353
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uasset" 354
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uexp" 355
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 356
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 357
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 358
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 359
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 360
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 361
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 362
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 363
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 364
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 365
-"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 366
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 350
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uexp" 351
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.ubulk" 352
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uasset" 353
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.uexp" 354
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 355
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uexp" 356
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 357
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uexp" 358
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 359
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uexp" 360
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 361
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uexp" 362
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 363
+"../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uexp" 364
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 365
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uexp" 366
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 367
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uexp" 368
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 369
@@ -493,10 +493,10 @@
 "../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/MI_OculusGo.uexp" 492
 "../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uasset" 493
 "../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uexp" 494
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 495
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uexp" 496
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 497
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 498
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 495
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 496
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 497
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uexp" 498
 "../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 499
 "../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uexp" 500
 "../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/Materials/PokeAHoleMaterial.uasset" 501
@@ -552,55 +552,63 @@
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uasset" 551
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uexp" 552
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.ubulk" 553
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uasset" 554
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uexp" 555
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uasset" 556
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uexp" 557
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uasset" 558
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uexp" 559
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uasset" 560
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uexp" 561
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uasset" 562
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uexp" 563
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uasset" 564
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uexp" 565
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uasset" 566
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uexp" 567
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uasset" 568
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uexp" 569
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uasset" 570
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uexp" 571
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Table.uasset" 572
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Table.uexp" 573
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Special.uasset" 574
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Special.uexp" 575
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Main.uasset" 576
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Main.uexp" 577
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/home_1.uasset" 578
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/home_1.uexp" 579
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/BP_MyHome.uasset" 580
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/BP_MyHome.uexp" 581
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uasset" 582
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uexp" 583
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uasset" 584
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uexp" 585
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uasset" 586
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uexp" 587
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uasset" 588
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uexp" 589
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uasset" 590
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uexp" 591
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 592
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 593
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 594
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 595
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 596
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 597
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 598
-"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 599
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 600
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uexp" 601
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uasset" 602
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uexp" 603
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.uexp" 604
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.umap" 605
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uasset" 554
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uexp" 555
+"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uasset" 556
+"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uexp" 557
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uasset" 558
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uexp" 559
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uasset" 560
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uexp" 561
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uasset" 562
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uexp" 563
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uasset" 564
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uexp" 565
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uasset" 566
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uexp" 567
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uasset" 568
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uexp" 569
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uasset" 570
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uexp" 571
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uasset" 572
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uexp" 573
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uasset" 574
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uexp" 575
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uasset" 576
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uexp" 577
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uasset" 578
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uexp" 579
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Table.uasset" 580
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Table.uexp" 581
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Special.uasset" 582
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Special.uexp" 583
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Main.uasset" 584
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/Mat_Main.uexp" 585
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/home_1.uasset" 586
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/home_1.uexp" 587
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/BP_MyHome.uasset" 588
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Home/BP_MyHome.uexp" 589
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uasset" 590
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uexp" 591
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uasset" 592
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uexp" 593
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uasset" 594
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uexp" 595
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uasset" 596
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uexp" 597
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uasset" 598
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uexp" 599
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 600
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 601
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 602
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 603
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 604
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 605
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 606
+"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 607
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 608
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uexp" 609
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uasset" 610
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uexp" 611
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.uexp" 612
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.umap" 613

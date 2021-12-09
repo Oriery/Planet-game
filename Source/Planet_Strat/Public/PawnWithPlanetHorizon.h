@@ -47,10 +47,15 @@ public:
 	UPROPERTY(Replicated)
 		FRotator WantedByServerRotOfCharacter;
 
+	void MouseLeftClick();
+
 	void MoveRightAxis(float AxisValue);
 	void MoveForwardAxis(float AxisValue);
 	void RotateXAxis(float AxisValue);
 	void RotateYAxis(float AxisValue);
+
+	UFUNCTION(Server, Reliable)
+		void ServerRPC_TraceAndClickActor(FVector posStart, FVector posFinish);
 
 	UFUNCTION(Server, Unreliable)
 		void ServerRPC_MoveRightAxis(float AxisValue);
@@ -69,5 +74,9 @@ public:
 
 	UPROPERTY()
 		int maxSpeedOfPawn;
+
+	bool isHoldingSmth;
+
+	AActor* whatActorHolding;
 
 };

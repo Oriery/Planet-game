@@ -5,6 +5,9 @@
 
 #include "ActorWithPlanetGravity.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "PawnNormal.h"
+#include "MyGameMode.h"
 
 // Sets default values
 AActorWithPlanetGravity::AActorWithPlanetGravity()
@@ -16,9 +19,19 @@ AActorWithPlanetGravity::AActorWithPlanetGravity()
 
 	VisibleMesh->SetSimulatePhysics(true);
 	VisibleMesh->SetEnableGravity(false);
+	VisibleMesh->SetCollisionProfileName("PhysicsActor");
+	VisibleMesh->SetLinearDamping(1);
 
 	SetReplicates(true);
 	SetReplicateMovement(true);
+
+	isGrabbed = false;
+	GravityAcceleration = 8;
+
+	if (AMyGameMode* gm = Cast<AMyGameMode>(UGameplayStatics::GetGameMode(GetWorld())))
+	{
+		ActorOfCenterOfGravity = gm->ActorOfCenterOfGravity;
+	}
 }
 
 // Called when the game starts or when spawned
@@ -35,8 +48,8 @@ void AActorWithPlanetGravity::BeginPlay()
 		else
 		{
 			LocationOfCenterOfGravity = FVector(0.f, 0.f, 0.f);
+			print("Box has no reference to ActorOfCenterOfGravity. Using 0,0,0 instead");
 		}
-		
 	}
 }
 
@@ -49,7 +62,45 @@ void AActorWithPlanetGravity::Tick(float DeltaTime)
 	{
 		FVector vec = (GetActorLocation() - LocationOfCenterOfGravity);
 		vec.Normalize();
-		VisibleMesh->SetPhysicsLinearVelocity(- vec * 2, true);
+		VisibleMesh->SetPhysicsLinearVelocity(- vec * GravityAcceleration, true);
 	}
 }
 
+void AActorWithPlanetGravity::mouseLeftClick(APawn* PawnWhoClicked, UPrimitiveComponent* hitComponent)
+{
+	if (APawnNormal* whoClicked = Cast<APawnNormal>(PawnWhoClicked))
+	{
+		if (!isGrabbed && !whoClicked->isHoldingSmth)
+		{
+			isGrabbed = true;
+			grabbedByActor = whoClicked;
+			whoClicked->isHoldingSmth = true;
+			whoClicked->whatActorHolding = this;
+
+			tempCollisionProfileName = VisibleMesh->GetCollisionProfileName();
+			MulticastRPC_setPhysicsEnabledOfMesh(false);
+			MulticastRPC_setCollisionProfileOfMesh("OverlapAll");
+			FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepWorld, EAttachmentRule::KeepWorld, EAttachmentRule::KeepWorld, false);
+			
+			AttachToComponent(whoClicked->CameraFPS, rules);
+		}
+		else if (isGrabbed && grabbedByActor == whoClicked && VisibleMesh->GetOverlapInfos().Num() == 0)
+		{
+			isGrabbed = false;
+			whoClicked->isHoldingSmth = false;
+
+			MulticastRPC_setPhysicsEnabledOfMesh(true);
+			MulticastRPC_setCollisionProfileOfMesh(tempCollisionProfileName);
+
+			DetachRootComponentFromParent();
+		}
+	}
+}
+
+void AActorWithPlanetGravity::MulticastRPC_setCollisionProfileOfMesh_Implementation(FName name) {
+	VisibleMesh->SetCollisionProfileName(name);
+}
+
+void AActorWithPlanetGravity::MulticastRPC_setPhysicsEnabledOfMesh_Implementation(bool enabled) {
+	VisibleMesh->SetSimulatePhysics(enabled);
+}

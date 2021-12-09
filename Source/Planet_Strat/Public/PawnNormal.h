@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "PawnWithPlanetHorizon.h"
+//#include "PhysicsHandleComponent.h"
 #include "PawnNormal.generated.h"
 
 /**
@@ -13,5 +14,8 @@ UCLASS()
 class PLANET_STRAT_API APawnNormal : public APawnWithPlanetHorizon
 {
 	GENERATED_BODY()
-	
+
+	public: 
+		APawnNormal();
+		
 };

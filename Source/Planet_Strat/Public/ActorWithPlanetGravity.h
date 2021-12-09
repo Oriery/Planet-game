@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MainActionInterface.h"
 #include "ActorWithPlanetGravity.generated.h"
 
 UCLASS()
-class PLANET_STRAT_API AActorWithPlanetGravity : public AActor
+class PLANET_STRAT_API AActorWithPlanetGravity : public AActor, public IMainActionInterface
 {
 	GENERATED_BODY()
 	
@@ -23,12 +24,28 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	virtual void mouseLeftClick(APawn* PawnWhoClicked, UPrimitiveComponent* hitComponent) override;
+
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* VisibleMesh;
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorOfCenterOfGravity;
 
-	UPROPERTY()
 	FVector LocationOfCenterOfGravity;
+
+	UFUNCTION(NetMulticast, Reliable)
+		void MulticastRPC_setCollisionProfileOfMesh(FName name);
+
+	UFUNCTION(NetMulticast, Reliable)
+		void MulticastRPC_setPhysicsEnabledOfMesh(bool enabled);
+
+	bool isGrabbed;
+
+	FName tempCollisionProfileName;
+
+	AActor* grabbedByActor;
+
+	UPROPERTY(EditAnywhere)
+	float GravityAcceleration;
 };

@@ -32,7 +32,11 @@ void ASpawner::mainAction()
 	param.bNoFail = true;
 	if (WhatToSpawn)
 	{
-		GetWorld()->SpawnActor(WhatToSpawn, &GetTransform(), param);
+		AActor* spawnedActor = GetWorld()->SpawnActor(WhatToSpawn, &GetTransform(), param);
+
+		/*AActor* spawnedActor = GetWorld()->SpawnActorDeferred<AActor>(WhatToSpawn, GetTransform());
+		APawnWithPlanetHorizon* pawnWithPlanetHorizon = Cast<APawnWithPlanetHorizon>(spawnedActor);
+		UGameplayStatics::FinishSpawningActor(spawnedActor, GetTransform());*/
 	}
 	else
 	{

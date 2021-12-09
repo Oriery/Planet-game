@@ -1,9 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::White, text);
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::White, text);
  
 #include "PawnWithPlanetHorizon.h"
 #include "Net/UnrealNetwork.h"
+#include "MainActionInterface.h"
+#include "DrawDebugHelpers.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
@@ -49,6 +51,8 @@ APawnWithPlanetHorizon::APawnWithPlanetHorizon()
 
 	SetReplicates(true);
 	SetReplicateMovement(true);
+
+	isHoldingSmth = false;
 }
 
 // Called when the game starts or when spawned
@@ -89,13 +93,20 @@ void APawnWithPlanetHorizon::SetupPlayerInputComponent(UInputComponent* PlayerIn
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//InputComponent->BindAction("Grow", IE_Pressed, this, &AMyPawn::StartGrowing);
+	InputComponent->BindAction("MouseLeftClick", IE_Pressed, this, &APawnWithPlanetHorizon::MouseLeftClick);
 	//InputComponent->BindAction("Grow", IE_Released, this, &AMyPawn::StopGrowing);
 
 	InputComponent->BindAxis("MoveForward", this, &APawnWithPlanetHorizon::MoveForwardAxis);
 	InputComponent->BindAxis("MoveRight", this, &APawnWithPlanetHorizon::MoveRightAxis);
 	InputComponent->BindAxis("RotateX", this, &APawnWithPlanetHorizon::RotateXAxis);
 	InputComponent->BindAxis("RotateY", this, &APawnWithPlanetHorizon::RotateYAxis);
+}
+
+void APawnWithPlanetHorizon::MouseLeftClick()
+{
+	FVector posStart = CameraFPS->GetComponentLocation();
+	FVector posFinish = posStart + CameraFPS->GetForwardVector() * 100;
+	ServerRPC_TraceAndClickActor(posStart, posFinish);
 }
 
 void APawnWithPlanetHorizon::MoveRightAxis(float AxisValue)
@@ -127,21 +138,49 @@ void APawnWithPlanetHorizon::RotateYAxis(float AxisValue)
 	{
 		rot.Pitch = 40;
 	}
-	else if (rot.Pitch < -40)
+	else if (rot.Pitch < -60)
 	{
-		rot.Pitch = -40;
+		rot.Pitch = -60;
 	}
 	VisibleMeshHead->SetRelativeRotation(rot);
 	ServerRPC_RotateYAxis(rot.Pitch);
 }
 
+void APawnWithPlanetHorizon::ServerRPC_TraceAndClickActor_Implementation(FVector posStart, FVector posFinish)
+{
+	if (isHoldingSmth)
+	{
+		IMainActionInterface* holdedActor = Cast<IMainActionInterface>(whatActorHolding);
+		holdedActor->mouseLeftClick(this, nullptr);
+	}
+	else
+	{
+		FHitResult hitResult;
+		FCollisionQueryParams collisionParams;
+		TArray<UPrimitiveComponent*> componentsToIgnore;
+		collisionParams.AddIgnoredActor(this);
+		collisionParams.bTraceComplex = false;
+
+
+		bool smthIsHit = GetWorld()->LineTraceSingleByChannel(hitResult, posStart, posFinish, ECC_Visibility, collisionParams);
+
+		if (smthIsHit)
+		{
+			//print("Hitted: " + hitResult.Actor->GetName() + " ::: " + hitResult.Component->GetName());
+			//DrawDebugLine(GetWorld(), posStart, posFinish, FColor::Green, false, 5.f, 0, 1);
+			IMainActionInterface* hittedActor = Cast<IMainActionInterface>(hitResult.Actor);
+			if (hittedActor)
+			{
+				hittedActor->mouseLeftClick(this, hitResult.Component.Get());
+			}
+		}
+	}
+}
 
 void APawnWithPlanetHorizon::ServerRPC_MoveRightAxis_Implementation(float AxisValue)
 {
-	print("ServerRPC_MoveRightAxis_Implementation");
 	if (AxisValue)
 	{
-		print("AxisValue"/*FString::SanitizeFloat(WantedByServerRotOfCharacter.Pitch)*/);
 		FVector	spdToAddTemp = VisibleMeshBody->GetRightVector() * AxisValue;
 		float coof = 1;
 		if (FVector::DotProduct(MeshMass->GetPhysicsLinearVelocity(), spdToAddTemp) < -3)

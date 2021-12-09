@@ -3,3 +3,7 @@
 
 #include "PawnNormal.h"
 
+APawnNormal::APawnNormal() : APawnWithPlanetHorizon::APawnWithPlanetHorizon()
+{
+	
+}
