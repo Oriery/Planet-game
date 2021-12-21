@@ -1,9 +1,10 @@
 
-#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::White, text);
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::White, text);
 
 #include "MyGameMode.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "PawnNormal.h"
+#include "MyPlayerState.h"
 #include "ActorPlanet.h"
 
 AMyGameMode::AMyGameMode()
@@ -16,64 +17,82 @@ AMyGameMode::AMyGameMode()
 		APlayerStartForPlanet* spawnerTemp = Cast<APlayerStartForPlanet>(spawner);
 		if (spawnerTemp)
 		{
-			if (!Spawners.Contains(spawnerTemp))
-			{
-				Spawners.Add(spawnerTemp);
-			}
+			Spawners.Add(spawnerTemp);
 		}
 	}
 
+	bLastAddedPlayerIsTeamA = false;
 }
 
 
 void AMyGameMode::HandleStartingNewPlayer_Implementation(APlayerController* NewPlayer)
 {
 	print("Handle starting new player");
+
+	AMyPlayerState* playerState = NewPlayer->GetPlayerState<AMyPlayerState>();
+
+	if (playerState)
+	{
+		playerState->team = decideWhichTeamIsNewPlayer();
+	}
+	else
+	{
+		print("Player State is not of a wanted class");
+		return;
+	}
+
 	APlayerStartForPlanet* spawner = nullptr;
 	for (APlayerStartForPlanet* spawnerTemp : Spawners)
 	{
-		if (spawnerTemp->isFree)
+		if (playerState->team == spawnerTemp->team && spawnerTemp->TriggerBox->GetOverlapInfos().Num() == 0)
 		{
-			spawnerTemp->isFree = false;
 			spawner = spawnerTemp;
 			break;
 		}
+	}
+
+	if (!spawner)
+	{
+		print("No available spawners for new player to join!");
+		return;
 	}
 
 	if (!ActorOfCenterOfGravity)
 	{
 		TArray<AActor*> arrOfPlanets;
 		UGameplayStatics::GetAllActorsOfClass(GetWorld(), AActorPlanet::StaticClass(), arrOfPlanets);
+		if (arrOfPlanets.Num() < 1)
+		{
+			print("No Planet Found.");
+			return;
+		}
 		ActorOfCenterOfGravity = arrOfPlanets[0];
 	}
+	
+	FVector locatOfPlanet = ActorOfCenterOfGravity->GetActorLocation();
+	FVector vec = spawner->GetActorLocation() - locatOfPlanet;
+	vec.Normalize();
+	vec = vec * (RadiusOfPlanet);
+	FTransform tran = FTransform(spawner->GetActorRotation(), vec + locatOfPlanet, spawner->GetActorScale());
+	AActor* spawnedActor = GetWorld()->SpawnActorDeferred<AActor>(DefaultPawnClass, tran);
+	APawnWithPlanetHorizon* pawnWithPlanetHorizon = Cast<APawnWithPlanetHorizon>(spawnedActor);
+	pawnWithPlanetHorizon->LocationOfCenterOfGravity = locatOfPlanet;
+	pawnWithPlanetHorizon->RadiusOfPlanet = RadiusOfPlanet;
+	pawnWithPlanetHorizon->maxSpeedOfPawn = maxSpeedOfPawnNormal;
+	UGameplayStatics::FinishSpawningActor(spawnedActor, tran);
 
-	if (ActorOfCenterOfGravity)
+	NewPlayer->Possess((APawn*)pawnWithPlanetHorizon);
+}
+
+ETeams AMyGameMode::decideWhichTeamIsNewPlayer()
+{
+	bLastAddedPlayerIsTeamA = !bLastAddedPlayerIsTeamA;
+	if (bLastAddedPlayerIsTeamA)
 	{
-		if (spawner)
-		{
-			FVector locatOfPlanet = ActorOfCenterOfGravity->GetActorLocation();
-			FVector vec = spawner->GetActorLocation() - locatOfPlanet;
-			vec.Normalize();
-			vec = vec * (RadiusOfPlanet + 300);
-			FTransform tran = FTransform(spawner->GetActorRotation(), vec + locatOfPlanet, spawner->GetActorScale());
-			AActor* spawnedActor = GetWorld()->SpawnActorDeferred<AActor>(DefaultPawnClass, tran);
-			APawnWithPlanetHorizon* pawnWithPlanetHorizon = Cast<APawnWithPlanetHorizon>(spawnedActor);
-			pawnWithPlanetHorizon->LocationOfCenterOfGravity = locatOfPlanet;
-			pawnWithPlanetHorizon->RadiusOfPlanet = RadiusOfPlanet;
-			pawnWithPlanetHorizon->maxSpeedOfPawn = maxSpeedOfPawnNormal;
-			UGameplayStatics::FinishSpawningActor(spawnedActor, tran);
-
-			NewPlayer->Possess((APawn*)pawnWithPlanetHorizon);
-		}
-		else
-		{
-			print("No available spawners for new player to join! Calling Super::HandleStartingNewPlayer");
-			Super::HandleStartingNewPlayer(NewPlayer);
-		}
+		return ETeams::TEAM_A;
 	}
 	else
 	{
-		print("Error. Calling Super::HandleStartingNewPlayer");
-		Super::HandleStartingNewPlayer(NewPlayer);
+		return ETeams::TEAM_B;
 	}
 }

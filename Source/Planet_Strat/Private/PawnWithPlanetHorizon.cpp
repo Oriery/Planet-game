@@ -39,17 +39,18 @@ APawnWithPlanetHorizon::APawnWithPlanetHorizon()
 	VisibleMeshHead->SetSimulatePhysics(false);
 	VisibleMeshHead->SetEnableGravity(false);
 
-	/*VisibleMeshBody->SetLinearDamping(0);
-	VisibleMeshBody->SetAngularDamping(5);*/
 	MeshMass->SetLinearDamping(0);
 	MeshMass->SetAngularDamping(5);
 
-	//VisibleMeshHead->SetIsReplicated(true);
+	SetRootComponent(MeshMass);
 
 	NetUpdateFrequency = 40;
 	MinNetUpdateFrequency = 2;
 
-	SetReplicates(true);
+	CameraVerticalAngleMin = -60;
+	CameraVerticalAngleMax = 60;
+
+	bReplicates = true;
 	SetReplicateMovement(true);
 
 	isHoldingSmth = false;
@@ -134,13 +135,13 @@ void APawnWithPlanetHorizon::RotateYAxis(float AxisValue)
 {
 	FRotator rot = VisibleMeshHead->GetRelativeRotation() + FRotator(AxisValue, 0, 0);
 
-	if (rot.Pitch > 40)
+	if (rot.Pitch > CameraVerticalAngleMax)
 	{
-		rot.Pitch = 40;
+		rot.Pitch = CameraVerticalAngleMax;
 	}
-	else if (rot.Pitch < -60)
+	else if (rot.Pitch < CameraVerticalAngleMin)
 	{
-		rot.Pitch = -60;
+		rot.Pitch = CameraVerticalAngleMin;
 	}
 	VisibleMeshHead->SetRelativeRotation(rot);
 	ServerRPC_RotateYAxis(rot.Pitch);

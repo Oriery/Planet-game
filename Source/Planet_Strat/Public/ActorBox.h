@@ -14,4 +14,19 @@ class PLANET_STRAT_API AActorBox : public AActorWithPlanetGravity
 {
 	GENERATED_BODY()
 	
+protected:
+	UPROPERTY(EditDefaultsOnly)
+	int CostOfBox;
+
+	bool bIsPacked;
+
+public:
+	AActorBox();
+
+	int GetCost();
+	void SetCost(int newCost);
+	void AddCost(int addCost);
+
+	void SetIsPacked(bool isPacked);
+	bool GetIsPacked();
 };

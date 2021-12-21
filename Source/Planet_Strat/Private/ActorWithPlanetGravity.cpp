@@ -1,12 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::White, text);
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::White, text);
 
 #include "ActorWithPlanetGravity.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "PawnNormal.h"
+#include "Conveyor.h"
 #include "MyGameMode.h"
 
 // Sets default values
@@ -22,11 +23,15 @@ AActorWithPlanetGravity::AActorWithPlanetGravity()
 	VisibleMesh->SetCollisionProfileName("PhysicsActor");
 	VisibleMesh->SetLinearDamping(1);
 
-	SetReplicates(true);
+	SetRootComponent(VisibleMesh);
+
+	bReplicates = true;	
 	SetReplicateMovement(true);
 
 	isGrabbed = false;
 	GravityAcceleration = 8;
+	shouldApplyGravity = true;
+	bCanBeGrabbedByConveyor = true;
 
 	if (AMyGameMode* gm = Cast<AMyGameMode>(UGameplayStatics::GetGameMode(GetWorld())))
 	{
@@ -58,7 +63,7 @@ void AActorWithPlanetGravity::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (HasAuthority())
+	if (HasAuthority() && shouldApplyGravity)
 	{
 		FVector vec = (GetActorLocation() - LocationOfCenterOfGravity);
 		vec.Normalize();
@@ -70,8 +75,19 @@ void AActorWithPlanetGravity::mouseLeftClick(APawn* PawnWhoClicked, UPrimitiveCo
 {
 	if (APawnNormal* whoClicked = Cast<APawnNormal>(PawnWhoClicked))
 	{
-		if (!isGrabbed && !whoClicked->isHoldingSmth)
+		AConveyor* conv = Cast<AConveyor>(grabbedByActor);
+		bool bIsGrabbedByConveyor = isGrabbed && conv != nullptr;
+
+		if ((!isGrabbed || bIsGrabbedByConveyor) && !whoClicked->isHoldingSmth) // then grab box
 		{
+			if (conv)
+			{
+				conv->boxesToMove.Remove(this);
+				SetCanBeGrabbedByConveyor(false);
+				FTimerHandle timerHandle;
+				GetWorldTimerManager().SetTimer(timerHandle, this, &AActorWithPlanetGravity::SetCanBeGrabbedByConveyorTrue, 1.0, false, 1);
+			}
+
 			isGrabbed = true;
 			grabbedByActor = whoClicked;
 			whoClicked->isHoldingSmth = true;
@@ -81,26 +97,51 @@ void AActorWithPlanetGravity::mouseLeftClick(APawn* PawnWhoClicked, UPrimitiveCo
 			MulticastRPC_setPhysicsEnabledOfMesh(false);
 			MulticastRPC_setCollisionProfileOfMesh("OverlapAll");
 			FAttachmentTransformRules rules = FAttachmentTransformRules(EAttachmentRule::KeepWorld, EAttachmentRule::KeepWorld, EAttachmentRule::KeepWorld, false);
-			
+			SetActorLocation(whoClicked->CameraFPS->GetComponentLocation() + whoClicked->CameraFPS->GetForwardVector() * 60);
 			AttachToComponent(whoClicked->CameraFPS, rules);
 		}
-		else if (isGrabbed && grabbedByActor == whoClicked && VisibleMesh->GetOverlapInfos().Num() == 0)
+		else if (isGrabbed && grabbedByActor == whoClicked && VisibleMesh->GetOverlapInfos().Num() == 0) // then release box
 		{
 			isGrabbed = false;
 			whoClicked->isHoldingSmth = false;
 
-			MulticastRPC_setPhysicsEnabledOfMesh(true);
-			MulticastRPC_setCollisionProfileOfMesh(tempCollisionProfileName);
+			detachFromPawn();
 
-			DetachRootComponentFromParent();
+			VisibleMesh->SetPhysicsLinearVelocity(VisibleMesh->GetPhysicsLinearVelocity().GetClampedToMaxSize(whoClicked->maxSpeedOfPawn));
 		}
 	}
 }
 
-void AActorWithPlanetGravity::MulticastRPC_setCollisionProfileOfMesh_Implementation(FName name) {
+void AActorWithPlanetGravity::detachFromPawn()
+{
+	MulticastRPC_setPhysicsEnabledOfMesh(true);
+	MulticastRPC_setCollisionProfileOfMesh(tempCollisionProfileName);
+
+	DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+}
+
+void AActorWithPlanetGravity::SetCanBeGrabbedByConveyor(bool can)
+{
+	bCanBeGrabbedByConveyor = can;
+}
+
+void AActorWithPlanetGravity::SetCanBeGrabbedByConveyorTrue()
+{
+	print("bCanBeGrabbedByConveyor = true");
+	bCanBeGrabbedByConveyor = true;
+}
+
+bool AActorWithPlanetGravity::GetCanBeGrabbedByConveyor()
+{
+	return bCanBeGrabbedByConveyor;
+}
+
+void AActorWithPlanetGravity::MulticastRPC_setCollisionProfileOfMesh_Implementation(FName name) 
+{
 	VisibleMesh->SetCollisionProfileName(name);
 }
 
-void AActorWithPlanetGravity::MulticastRPC_setPhysicsEnabledOfMesh_Implementation(bool enabled) {
+void AActorWithPlanetGravity::MulticastRPC_setPhysicsEnabledOfMesh_Implementation(bool enabled) 
+{
 	VisibleMesh->SetSimulatePhysics(enabled);
 }

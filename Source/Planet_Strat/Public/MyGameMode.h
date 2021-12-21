@@ -19,7 +19,7 @@ public:
 	
 	AMyGameMode();
 
-	void HandleStartingNewPlayer_Implementation(APlayerController* NewPlayer);
+	virtual void HandleStartingNewPlayer_Implementation(APlayerController* NewPlayer) override;
 
 	UPROPERTY()
 		TArray<APlayerStartForPlanet*> Spawners;
@@ -27,12 +27,14 @@ public:
 	UPROPERTY()
 		AActor* ActorOfCenterOfGravity;
 
-	UPROPERTY(EditDefaultsOnly)
-		TSubclassOf<AActor> DefaultGravityActor; // Planet Class
-
 	UPROPERTY(EditAnywhere)
 		float RadiusOfPlanet;
 
 	UPROPERTY(EditAnywhere)
 		int maxSpeedOfPawnNormal;
+
+	ETeams decideWhichTeamIsNewPlayer();
+
+	// This has to be rewritten
+	bool bLastAddedPlayerIsTeamA;
 };

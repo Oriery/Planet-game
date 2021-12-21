@@ -16,21 +16,23 @@ public:
 	// Sets default values for this actor's properties
 	AActorWithPlanetGravity();
 
+	UPROPERTY(VisibleAnywhere)
+		UStaticMeshComponent* VisibleMesh;
+
+	UPROPERTY(EditAnywhere)
+		AActor* ActorOfCenterOfGravity;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	bool bCanBeGrabbedByConveyor;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void mouseLeftClick(APawn* PawnWhoClicked, UPrimitiveComponent* hitComponent) override;
-
-	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* VisibleMesh;
-
-	UPROPERTY(EditAnywhere)
-	AActor* ActorOfCenterOfGravity;
 
 	FVector LocationOfCenterOfGravity;
 
@@ -40,6 +42,8 @@ public:
 	UFUNCTION(NetMulticast, Reliable)
 		void MulticastRPC_setPhysicsEnabledOfMesh(bool enabled);
 
+	void detachFromPawn();
+
 	bool isGrabbed;
 
 	FName tempCollisionProfileName;
@@ -48,4 +52,10 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	float GravityAcceleration;
+
+	bool shouldApplyGravity;
+
+	void SetCanBeGrabbedByConveyor(bool can);
+	void SetCanBeGrabbedByConveyorTrue();
+	bool GetCanBeGrabbedByConveyor();
 };

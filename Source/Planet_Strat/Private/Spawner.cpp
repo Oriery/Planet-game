@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::White, text);
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 4.f, FColor::White, text);
 
 #include "Spawner.h"
 
@@ -33,10 +33,6 @@ void ASpawner::mainAction()
 	if (WhatToSpawn)
 	{
 		AActor* spawnedActor = GetWorld()->SpawnActor(WhatToSpawn, &GetTransform(), param);
-
-		/*AActor* spawnedActor = GetWorld()->SpawnActorDeferred<AActor>(WhatToSpawn, GetTransform());
-		APawnWithPlanetHorizon* pawnWithPlanetHorizon = Cast<APawnWithPlanetHorizon>(spawnedActor);
-		UGameplayStatics::FinishSpawningActor(spawnedActor, GetTransform());*/
 	}
 	else
 	{

@@ -41,6 +41,12 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		UCameraComponent* CameraFPS;
 
+	UPROPERTY(EditAnywhere)
+		int CameraVerticalAngleMin;
+
+	UPROPERTY(EditAnywhere)
+		int CameraVerticalAngleMax;
+
 	UPROPERTY(VisibleAnywhere)
 		float MaxSpeed;
 
