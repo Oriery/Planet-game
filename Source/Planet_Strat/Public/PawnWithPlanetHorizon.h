@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Camera/CameraComponent.h"
+#include "Teams.h"
 #include "PawnWithPlanetHorizon.generated.h"
 
 UCLASS()
@@ -52,6 +53,9 @@ public:
 
 	UPROPERTY(Replicated)
 		FRotator WantedByServerRotOfCharacter;
+
+	UPROPERTY(Replicated, BlueprintReadOnly)
+		ETeams team;
 
 	void MouseLeftClick();
 

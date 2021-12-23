@@ -53,7 +53,7 @@ void AActorWithPlanetGravity::BeginPlay()
 		else
 		{
 			LocationOfCenterOfGravity = FVector(0.f, 0.f, 0.f);
-			print("Box has no reference to ActorOfCenterOfGravity. Using 0,0,0 instead");
+			print("AActorWithPlanetGravity has no reference to ActorOfCenterOfGravity. Using 0,0,0 instead");
 		}
 	}
 }
@@ -127,7 +127,6 @@ void AActorWithPlanetGravity::SetCanBeGrabbedByConveyor(bool can)
 
 void AActorWithPlanetGravity::SetCanBeGrabbedByConveyorTrue()
 {
-	print("bCanBeGrabbedByConveyor = true");
 	bCanBeGrabbedByConveyor = true;
 }
 

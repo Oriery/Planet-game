@@ -6,6 +6,7 @@
 #include "Net/UnrealNetwork.h"
 #include "MainActionInterface.h"
 #include "DrawDebugHelpers.h"
+#include "MyPlayerState.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
@@ -54,6 +55,7 @@ APawnWithPlanetHorizon::APawnWithPlanetHorizon()
 	SetReplicateMovement(true);
 
 	isHoldingSmth = false;
+	team = ETeams::TEAM_A;
 }
 
 // Called when the game starts or when spawned
@@ -232,5 +234,6 @@ void APawnWithPlanetHorizon::ServerRPC_RotateYAxis_Implementation(float WantedAn
 void APawnWithPlanetHorizon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps)const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-	DOREPLIFETIME(APawnWithPlanetHorizon, WantedByServerRotOfCharacter);
+	DOREPLIFETIME(APawnWithPlanetHorizon, team);
+	DOREPLIFETIME(APawnWithPlanetHorizon, WantedByServerRotOfCharacter); 
 }

@@ -76,7 +76,6 @@ void AConveyor::Tick(float DeltaTime)
 				
 				if (MeshesOfEffectsMoving.Num() == MeshesOfEffectsStatic.Num())
 				{
-
 					MeshesOfEffectsMoving.Add(meshOfEffect);
 				}
 				else

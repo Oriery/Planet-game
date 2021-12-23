@@ -79,6 +79,7 @@ void AMyGameMode::HandleStartingNewPlayer_Implementation(APlayerController* NewP
 	pawnWithPlanetHorizon->LocationOfCenterOfGravity = locatOfPlanet;
 	pawnWithPlanetHorizon->RadiusOfPlanet = RadiusOfPlanet;
 	pawnWithPlanetHorizon->maxSpeedOfPawn = maxSpeedOfPawnNormal;
+	pawnWithPlanetHorizon->team = playerState->team;
 	UGameplayStatics::FinishSpawningActor(spawnedActor, tran);
 
 	NewPlayer->Possess((APawn*)pawnWithPlanetHorizon);
