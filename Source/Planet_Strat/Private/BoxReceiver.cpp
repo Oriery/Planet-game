@@ -48,10 +48,15 @@ void ABoxReceiver::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* O
 				{
 					pawnNormal->isHoldingSmth = false;
 					box->detachFromPawn();
+					box->isGrabbed = false;
+					box->shouldApplyGravity = true;
 				}
 				else if (AConveyor* conveyor = Cast<AConveyor>(box->grabbedByActor))
 				{
 					conveyor->boxesToMove.Remove(box);
+					box->detachFromConveyor();
+					box->isGrabbed = false;
+					box->shouldApplyGravity = true;
 				}
 				else
 				{

@@ -42,7 +42,8 @@ public:
 	UFUNCTION(NetMulticast, Reliable)
 		void MulticastRPC_setPhysicsEnabledOfMesh(bool enabled);
 
-	void detachFromPawn();
+	void detachFromPawn(); 
+	void detachFromConveyor();
 
 	bool isGrabbed;
 

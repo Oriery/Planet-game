@@ -120,6 +120,12 @@ void AActorWithPlanetGravity::detachFromPawn()
 	DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 }
 
+void AActorWithPlanetGravity::detachFromConveyor()
+{
+	MulticastRPC_setPhysicsEnabledOfMesh(true);
+	MulticastRPC_setCollisionProfileOfMesh(tempCollisionProfileName);
+}
+
 void AActorWithPlanetGravity::SetCanBeGrabbedByConveyor(bool can)
 {
 	bCanBeGrabbedByConveyor = can;
