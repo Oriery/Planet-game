@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MainActionInterface.h"
+#include "Components/TextRenderComponent.h"
 #include "Spawner.generated.h"
 
 UCLASS()
@@ -16,9 +17,17 @@ public:
 	// Sets default values for this actor's properties
 	ASpawner();
 
+	UPROPERTY(VisibleAnywhere)
+	UTextRenderComponent* TextRender;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditDefaultsOnly)
+	int CooldownLength;
+
+	void EndOfCooldown();
 
 public:	
 	// Called every frame
@@ -28,4 +37,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> WhatToSpawn;
+
+	UFUNCTION(NetMulticast, Reliable)
+		void MulticastRPC_SetVisibilityOfTextRender(bool bVisible);
+
+	bool bIsNotOnCooldown;
 };

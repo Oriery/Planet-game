@@ -10,13 +10,35 @@ ASpawner::ASpawner()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	TextRender = CreateDefaultSubobject<UTextRenderComponent>(TEXT("TextRender"));
+	TextRender->SetText(FText::FromString("Cooldown"));
+
+	bIsNotOnCooldown = true;
+
+	CooldownLength = 5;
+
+	bReplicates = true;
+
 }
 
 // Called when the game starts or when spawned
 void ASpawner::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	TextRender->SetVisibility(false);
+}
+
+void ASpawner::EndOfCooldown()
+{
+	bIsNotOnCooldown = true;
+
+	MulticastRPC_SetVisibilityOfTextRender(false);
+}
+
+void ASpawner::MulticastRPC_SetVisibilityOfTextRender_Implementation(bool bVisible)
+{
+	TextRender->SetVisibility(bVisible);
 }
 
 // Called every frame
@@ -32,7 +54,17 @@ void ASpawner::mainAction()
 	param.bNoFail = true;
 	if (WhatToSpawn)
 	{
-		AActor* spawnedActor = GetWorld()->SpawnActor(WhatToSpawn, &GetTransform(), param);
+		if (bIsNotOnCooldown)
+		{
+			AActor* spawnedActor = GetWorld()->SpawnActor(WhatToSpawn, &GetTransform(), param);
+
+			FTimerHandle timerHandle;
+
+			GetWorldTimerManager().SetTimer(timerHandle, this, &ASpawner::EndOfCooldown, 1.0, false, CooldownLength);
+
+			MulticastRPC_SetVisibilityOfTextRender(true);
+			bIsNotOnCooldown = false;
+		}
 	}
 	else
 	{
