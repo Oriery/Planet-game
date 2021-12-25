@@ -16,7 +16,7 @@ void AMyGameSession::RegisterServer()
 	Settings.bIsLANMatch = true;
 	Settings.bAllowJoinInProgress = true;
 	Settings.bShouldAdvertise = true;
-	Settings.NumPublicConnections = 16;
+	Settings.NumPublicConnections = 12;
 	Settings.bUsesPresence = true;
 	Session->CreateSession(0, GameSessionName, Settings);
 	UE_LOG(LogTemp, Log, TEXT("SessionCreated   --------------------------------"));

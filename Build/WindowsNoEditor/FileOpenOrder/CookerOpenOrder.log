@@ -211,10 +211,10 @@
 "../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uexp" 210
 "../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 211
 "../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uexp" 212
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 213
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uexp" 214
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 215
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uexp" 216
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 213
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uexp" 214
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 215
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uexp" 216
 "../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 217
 "../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uexp" 218
 "../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 219
@@ -385,114 +385,114 @@
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uexp" 384
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uasset" 385
 "../../../Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uexp" 386
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 387
-"../../../Engine/Content/BasicShapes/Cylinder.uexp" 388
-"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uasset" 389
-"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uexp" 390
-"../../../Engine/Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uasset" 391
-"../../../Engine/Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uexp" 392
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.uasset" 393
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.uexp" 394
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.ubulk" 395
-"../../../Engine/Content/EngineResources/Black.uasset" 396
-"../../../Engine/Content/EngineResources/Black.uexp" 397
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/M_XRController.uasset" 398
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/M_XRController.uexp" 399
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/MI_HTCVive.uasset" 400
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/MI_HTCVive.uexp" 401
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/HTCViveController.uasset" 402
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/HTCViveController.uexp" 403
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.uasset" 404
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.uexp" 405
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.ubulk" 406
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.uasset" 407
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.uexp" 408
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.ubulk" 409
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.uasset" 410
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.uexp" 411
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.ubulk" 412
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.uasset" 413
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.uexp" 414
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.ubulk" 415
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MI_MicrosoftMixedReality.uasset" 416
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MI_MicrosoftMixedReality.uexp" 417
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Left/left_MicrosoftMixedRealityController.uasset" 418
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Left/left_MicrosoftMixedRealityController.uexp" 419
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Right/right_MicrosoftMixedRealityController.uasset" 420
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Right/right_MicrosoftMixedRealityController.uexp" 421
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.uasset" 422
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.uexp" 423
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.ubulk" 424
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.uasset" 425
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.uexp" 426
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.ubulk" 427
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/MI_right_ValveIndex.uasset" 428
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/MI_right_ValveIndex.uexp" 429
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_ValveIndexController.uasset" 430
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_ValveIndexController.uexp" 431
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.uasset" 432
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.uexp" 433
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.ubulk" 434
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.uasset" 435
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.uexp" 436
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.ubulk" 437
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/MI_left_ValveIndex.uasset" 438
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/MI_left_ValveIndex.uexp" 439
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_ValveIndexController.uasset" 440
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_ValveIndexController.uexp" 441
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.uasset" 442
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.uexp" 443
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.ubulk" 444
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.uasset" 445
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.uexp" 446
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.ubulk" 447
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MI_OculusTouch.uasset" 448
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MI_OculusTouch.uexp" 449
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Right/right_OculusTouchController.uasset" 450
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Right/right_OculusTouchController.uexp" 451
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Left/left_OculusTouchController.uasset" 452
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Left/left_OculusTouchController.uexp" 453
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.uasset" 454
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.uexp" 455
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.ubulk" 456
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.uasset" 457
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.uexp" 458
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.ubulk" 459
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MI_OculusTouch_v2.uasset" 460
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MI_OculusTouch_v2.uexp" 461
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Left/left_OculusTouch_v2Controller.uasset" 462
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Left/left_OculusTouch_v2Controller.uexp" 463
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Right/right_OculusTouch_v2Controller.uasset" 464
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Right/right_OculusTouch_v2Controller.uexp" 465
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.uasset" 466
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.uexp" 467
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.ubulk" 468
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.uasset" 469
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.uexp" 470
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.ubulk" 471
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MI_OculusTouch_v3.uasset" 472
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MI_OculusTouch_v3.uexp" 473
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Right/right_OculusTouch_v3Controller.uasset" 474
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Right/right_OculusTouch_v3Controller.uexp" 475
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Left/left_OculusTouch_v3Controller.uasset" 476
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Left/left_OculusTouch_v3Controller.uexp" 477
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.uasset" 478
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.uexp" 479
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.ubulk" 480
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.uasset" 481
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.uexp" 482
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.ubulk" 483
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MI_GoogleDaydream.uasset" 484
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MI_GoogleDaydream.uexp" 485
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/GoogleDaydreamController.uasset" 486
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/GoogleDaydreamController.uexp" 487
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.uasset" 488
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.uexp" 489
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.ubulk" 490
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/MI_OculusGo.uasset" 491
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/MI_OculusGo.uexp" 492
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uasset" 493
-"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uexp" 494
+"../../../Engine/Content/EngineResources/Black.uasset" 387
+"../../../Engine/Content/EngineResources/Black.uexp" 388
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/M_XRController.uasset" 389
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/M_XRController.uexp" 390
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.uasset" 391
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.uexp" 392
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/BaseTexture.ubulk" 393
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/MI_HTCVive.uasset" 394
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/MI_HTCVive.uexp" 395
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/HTCViveController.uasset" 396
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/HTCVive/HTCViveController.uexp" 397
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.uasset" 398
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.uexp" 399
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/NormalTexture.ubulk" 400
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.uasset" 401
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.uexp" 402
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MRTexture.ubulk" 403
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.uasset" 404
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.uexp" 405
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/BaseTexture.ubulk" 406
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.uasset" 407
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.uexp" 408
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/EmissiveTexture.ubulk" 409
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MI_MicrosoftMixedReality.uasset" 410
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/MI_MicrosoftMixedReality.uexp" 411
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Left/left_MicrosoftMixedRealityController.uasset" 412
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Left/left_MicrosoftMixedRealityController.uexp" 413
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Right/right_MicrosoftMixedRealityController.uasset" 414
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/MicrosoftMixedReality/Right/right_MicrosoftMixedRealityController.uexp" 415
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.uasset" 416
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.uexp" 417
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_MRTexture.ubulk" 418
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.uasset" 419
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.uexp" 420
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_BaseTexture.ubulk" 421
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/MI_right_ValveIndex.uasset" 422
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/MI_right_ValveIndex.uexp" 423
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_ValveIndexController.uasset" 424
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Right/right_ValveIndexController.uexp" 425
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.uasset" 426
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.uexp" 427
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_MRTexture.ubulk" 428
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.uasset" 429
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.uexp" 430
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_BaseTexture.ubulk" 431
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/MI_left_ValveIndex.uasset" 432
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/MI_left_ValveIndex.uexp" 433
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_ValveIndexController.uasset" 434
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/ValveIndex/Left/left_ValveIndexController.uexp" 435
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.uasset" 436
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.uexp" 437
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MRTexture.ubulk" 438
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.uasset" 439
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.uexp" 440
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/BaseTexture.ubulk" 441
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MI_OculusTouch.uasset" 442
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/MI_OculusTouch.uexp" 443
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Right/right_OculusTouchController.uasset" 444
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Right/right_OculusTouchController.uexp" 445
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Left/left_OculusTouchController.uasset" 446
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch/Left/left_OculusTouchController.uexp" 447
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.uasset" 448
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.uexp" 449
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MRTexture.ubulk" 450
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.uasset" 451
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.uexp" 452
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/BaseTexture.ubulk" 453
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MI_OculusTouch_v2.uasset" 454
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/MI_OculusTouch_v2.uexp" 455
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Left/left_OculusTouch_v2Controller.uasset" 456
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Left/left_OculusTouch_v2Controller.uexp" 457
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Right/right_OculusTouch_v2Controller.uasset" 458
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v2/Right/right_OculusTouch_v2Controller.uexp" 459
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.uasset" 460
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.uexp" 461
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MRTexture.ubulk" 462
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.uasset" 463
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.uexp" 464
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/BaseTexture.ubulk" 465
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MI_OculusTouch_v3.uasset" 466
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/MI_OculusTouch_v3.uexp" 467
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Right/right_OculusTouch_v3Controller.uasset" 468
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Right/right_OculusTouch_v3Controller.uexp" 469
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Left/left_OculusTouch_v3Controller.uasset" 470
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusTouch_v3/Left/left_OculusTouch_v3Controller.uexp" 471
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.uasset" 472
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.uexp" 473
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MRTexture.ubulk" 474
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.uasset" 475
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.uexp" 476
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/BaseTexture.ubulk" 477
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MI_GoogleDaydream.uasset" 478
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/MI_GoogleDaydream.uexp" 479
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/GoogleDaydreamController.uasset" 480
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/GoogleDaydream/GoogleDaydreamController.uexp" 481
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.uasset" 482
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.uexp" 483
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/BaseTexture.ubulk" 484
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/MI_OculusGo.uasset" 485
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/MI_OculusGo.uexp" 486
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uasset" 487
+"../../../Engine/Plugins/Runtime/OpenXR/Content/Devices/OculusGo/OculusGoController.uexp" 488
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 489
+"../../../Engine/Content/BasicShapes/Cylinder.uexp" 490
+"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uasset" 491
+"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uexp" 492
+"../../../Engine/Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uasset" 493
+"../../../Engine/Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uexp" 494
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 495
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uexp" 496
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 497
@@ -538,18 +538,18 @@
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_MainMenu.uexp" 537
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Main_Menu.uexp" 538
 "C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Main_Menu.umap" 539
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/________________.uasset" 540
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/________________.uexp" 541
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Table.uasset" 542
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Table.uexp" 543
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Special.uasset" 544
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Special.uexp" 545
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Main.uasset" 546
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Main.uexp" 547
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_3.uasset" 548
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_3.uexp" 549
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_2.uasset" 550
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_2.uexp" 551
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/Teams_B.uasset" 540
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/Teams_B.uexp" 541
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/________________.uasset" 542
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/________________.uexp" 543
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Table.uasset" 544
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Table.uexp" 545
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Special.uasset" 546
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Special.uexp" 547
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Main.uasset" 548
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/Mat_Main.uexp" 549
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_3.uasset" 550
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_3.uexp" 551
 "../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 552
 "../../../Engine/Content/EngineSky/T_Sky_Stars.uexp" 553
 "../../../Engine/Content/EngineSky/T_Sky_Stars.ubulk" 554
@@ -559,99 +559,107 @@
 "../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 558
 "../../../Engine/Content/EngineSky/T_Sky_Blue.uexp" 559
 "../../../Engine/Content/EngineSky/T_Sky_Blue.ubulk" 560
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 561
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 562
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uasset" 563
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uexp" 564
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_PlayerState.uasset" 565
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_PlayerState.uexp" 566
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_MyGameState.uasset" 567
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_MyGameState.uexp" 568
-"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uasset" 569
-"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uexp" 570
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_IngameMainMenu.uasset" 571
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_IngameMainMenu.uexp" 572
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uasset" 573
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uexp" 574
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uasset" 575
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uexp" 576
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uasset" 577
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uexp" 578
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uasset" 579
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uexp" 580
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uasset" 581
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uexp" 582
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uasset" 583
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uexp" 584
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uasset" 585
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uexp" 586
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uasset" 587
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uexp" 588
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uasset" 589
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uexp" 590
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_1.uasset" 591
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_1.uexp" 592
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/BP_MyHome.uasset" 593
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/BP_MyHome.uexp" 594
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________1.uasset" 595
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________1.uexp" 596
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorEffects.uasset" 597
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorEffects.uexp" 598
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/_________________001.uasset" 599
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/_________________001.uexp" 600
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________.uasset" 601
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________.uexp" 602
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorBody.uasset" 603
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorBody.uexp" 604
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/BP_Conveyor.uasset" 605
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/BP_Conveyor.uexp" 606
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/BP_BillboardWithInfo.uasset" 607
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/BP_BillboardWithInfo.uexp" 608
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uasset" 609
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uexp" 610
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uasset" 611
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uexp" 612
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uasset" 613
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uexp" 614
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxSender.uasset" 615
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxSender.uexp" 616
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxPacker.uasset" 617
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxPacker.uexp" 618
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/Material.uasset" 619
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/Material.uexp" 620
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonStaticPart.uasset" 621
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonStaticPart.uexp" 622
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/________________.uasset" 623
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/________________.uexp" 624
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonMovingPart.uasset" 625
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonMovingPart.uexp" 626
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/BP_InteractiveButton.uasset" 627
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/BP_InteractiveButton.uexp" 628
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uasset" 629
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uexp" 630
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uasset" 631
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uexp" 632
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uasset" 633
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uexp" 634
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uasset" 635
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uexp" 636
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uasset" 637
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uexp" 638
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 639
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 640
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 641
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 642
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 643
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 644
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 645
-"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 646
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 647
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uexp" 648
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Images/94-947400_square-3d-shape-png-clipart.uasset" 649
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Images/94-947400_square-3d-shape-png-clipart.uexp" 650
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_Spawner.uasset" 651
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_Spawner.uexp" 652
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uasset" 653
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uexp" 654
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.uexp" 655
-"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.umap" 656
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/Material.uasset" 561
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/Material.uexp" 562
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uasset" 563
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Round_Near_Entrence.uexp" 564
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 565
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uexp" 566
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uasset" 567
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1_BuiltData.uexp" 568
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_PlayerState.uasset" 569
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_PlayerState.uexp" 570
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_MyGameState.uasset" 571
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/States/BP_MyGameState.uexp" 572
+"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uasset" 573
+"../../../Engine/Content/EditorBlueprintResources/ActorMacros.uexp" 574
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_IngameMainMenu.uasset" 575
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_IngameMainMenu.uexp" 576
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uasset" 577
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/GUI/W_InGame_GUI.uexp" 578
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uasset" 579
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Other/BP_MyPlayerController.uexp" 580
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uasset" 581
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/MassOfBody.uexp" 582
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uasset" 583
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Head.uexp" 584
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uasset" 585
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_head.uexp" 586
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uasset" 587
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/Mat_Body.uexp" 588
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uasset" 589
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/character_body.uexp" 590
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uasset" 591
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Pawn/BP_PawnNormal.uexp" 592
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uasset" 593
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Gamemodes/BP_MyGameMode.uexp" 594
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/Teams_A.uasset" 595
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/Teams_A.uexp" 596
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/BP_LabelOfTeams.uasset" 597
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/TeamLabels/BP_LabelOfTeams.uexp" 598
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_1.uasset" 599
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_1.uexp" 600
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/BP_MyHome.uasset" 601
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/BP_MyHome.uexp" 602
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________1.uasset" 603
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________1.uexp" 604
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorEffects.uasset" 605
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorEffects.uexp" 606
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/_________________001.uasset" 607
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/_________________001.uexp" 608
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________.uasset" 609
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/________________.uexp" 610
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorBody.uasset" 611
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/conveyorBody.uexp" 612
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/BP_Conveyor.uasset" 613
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Conveyor/BP_Conveyor.uexp" 614
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/Material.uasset" 615
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/Material.uexp" 616
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/Billboard.uasset" 617
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/Billboard.uexp" 618
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uasset" 619
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_Entrence.uexp" 620
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/BP_BillboardWithInfo.uasset" 621
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/BillboardWithInfo/BP_BillboardWithInfo.uexp" 622
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uasset" 623
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/________________.uexp" 624
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uasset" 625
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/planet.uexp" 626
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uasset" 627
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/Planet/BP_ActorPlanet.uexp" 628
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_Spawner.uasset" 629
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_Spawner.uexp" 630
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxSender.uasset" 631
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxSender.uexp" 632
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_2.uasset" 633
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/StaticActors/Home/home_2.uexp" 634
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxPacker.uasset" 635
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_BoxPacker.uexp" 636
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonStaticPart.uasset" 637
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonStaticPart.uexp" 638
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/________________.uasset" 639
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/________________.uexp" 640
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonMovingPart.uasset" 641
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/ButtonMovingPart.uexp" 642
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/BP_InteractiveButton.uasset" 643
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/InteractiveStatic/BP_InteractiveButton.uexp" 644
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uasset" 645
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/Mat_main.uexp" 646
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uasset" 647
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/cube.uexp" 648
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uasset" 649
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Cube/BP_ActorBox.uexp" 650
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 651
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uexp" 652
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 653
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uexp" 654
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 655
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uexp" 656
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 657
+"../../../Engine/Content/EngineSky/SM_SkySphere.uexp" 658
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 659
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uexp" 660
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uasset" 661
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Actors/Other/BP_PlayerStartForPlanet.uexp" 662
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.uexp" 663
+"C:/Users/Aleksandr/Documents/Unreal Projects/Planet_Strat/Content/Maps/Map_1.umap" 664
