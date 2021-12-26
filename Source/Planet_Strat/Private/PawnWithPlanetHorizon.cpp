@@ -6,7 +6,6 @@
 #include "Net/UnrealNetwork.h"
 #include "MainActionInterface.h"
 #include "DrawDebugHelpers.h"
-#include "MyPlayerState.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values

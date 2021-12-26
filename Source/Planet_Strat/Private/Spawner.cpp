@@ -10,8 +10,11 @@ ASpawner::ASpawner()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	SceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneRoot"));
+
 	TextRender = CreateDefaultSubobject<UTextRenderComponent>(TEXT("TextRender"));
 	TextRender->SetText(FText::FromString("Cooldown"));
+	TextRender->SetupAttachment(SceneRoot);
 
 	bIsNotOnCooldown = true;
 
@@ -26,7 +29,10 @@ void ASpawner::BeginPlay()
 {
 	Super::BeginPlay();
 
-	TextRender->SetVisibility(false);
+	if (!HasAuthority())
+	{
+		TextRender->SetVisibility(false);
+	}
 }
 
 void ASpawner::EndOfCooldown()
@@ -38,7 +44,10 @@ void ASpawner::EndOfCooldown()
 
 void ASpawner::MulticastRPC_SetVisibilityOfTextRender_Implementation(bool bVisible)
 {
-	TextRender->SetVisibility(bVisible);
+	if (!HasAuthority())
+	{
+		TextRender->SetVisibility(bVisible);
+	}
 }
 
 // Called every frame

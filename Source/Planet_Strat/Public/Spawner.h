@@ -18,6 +18,9 @@ public:
 	ASpawner();
 
 	UPROPERTY(VisibleAnywhere)
+		USceneComponent* SceneRoot;
+
+	UPROPERTY(VisibleAnywhere)
 	UTextRenderComponent* TextRender;
 
 protected:
